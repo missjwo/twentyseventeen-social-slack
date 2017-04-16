@@ -34,6 +34,6 @@ function jw_twentyseventeen_social_slack_include_svg_icons() {
 		require_once( $svg_icons );
 	}
 }
-remove_action( 'wp_footer', 'twentyseventeen_include_svg_icons' );
+remove_action( 'wp_footer', 'twentyseventeen_include_svg_icons', 9999 );
 add_action( 'wp_footer', 'jw_twentyseventeen_social_slack_include_svg_icons', 9999 );
 
